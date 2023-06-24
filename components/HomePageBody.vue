@@ -1,13 +1,15 @@
 <template>
-    <div>body</div>
+    <section id="homepage-body">
+        <DestinationSection ref="destinations" :destinationsData="data.destinationsData"/>
+    </section>
 </template>
   
 <script>
-
+import DestinationSection from './HomePageBody/DestinationSection.vue';
 
     export default {
     name: "HomePageBody",
-    components: {  },
+    components: { DestinationSection},
 
     props: {
         scrollToSectionId: {
@@ -38,11 +40,11 @@
     },
 
     created() {
-        // if(this.$store.state.navigateToHome !== null) {
-        //     setTimeout(() => {
-        //         this.scrollToSectionIdHandle(this.$store.state.navigateToHome)
-        //     }, 1);
-        // }
+        if(this.$store && this.$store.state && this.$store.state.navigateToHome !== null) {
+            setTimeout(() => {
+                this.scrollToSectionIdHandle(this.$store.state.navigateToHome)
+            }, 1);
+        }
     },
 
     mounted() {
