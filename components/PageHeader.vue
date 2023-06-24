@@ -127,8 +127,8 @@ export default {
         },
 
         handleScroll() {
-            this.$emit('scrollToSection', null);
-            this.$store.commit('setNavigateToHome', null);
+            // this.$emit('scrollToSection', null);
+            // this.$store.commit('setNavigateToHome', null);
         },
 
         headerFunctionHandle(value) {

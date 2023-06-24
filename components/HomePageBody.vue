@@ -1,15 +1,23 @@
 <template>
     <section id="homepage-body">
+        <SpotlightDestination/>
         <DestinationSection ref="destinations" :destinationsData="data.destinationsData"/>
+        <FlightBooking ref="flight-booking" @popup-form="popupFormHandle" :flightBookingServiceData="data.flightBookingServiceData"/>
+        <HotelReservation ref="hotel-reservation" @popup-form="popupFormHandle" :hotelReservationData="data.hotelReservationData"/>
+        <TravelNews ref="travel-news" :travelNewsData="data.travelNewsData"/>
     </section>
 </template>
   
 <script>
+import SpotlightDestination from './HomePageBody/SpotlightDestination.vue';
 import DestinationSection from './HomePageBody/DestinationSection.vue';
+import FlightBooking from './HomePageBody/FlightBooking.vue';
+import HotelReservation from './HomePageBody/HotelReservation.vue';
+import TravelNews from './HomePageBody/TravelNews.vue';
 
     export default {
     name: "HomePageBody",
-    components: { DestinationSection},
+    components: { SpotlightDestination, DestinationSection, FlightBooking, HotelReservation, TravelNews },
 
     props: {
         scrollToSectionId: {
