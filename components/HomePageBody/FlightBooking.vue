@@ -8,7 +8,7 @@
 
                     <div v-for="data in flightBookingServiceData" :key="data.id" class="service-item" @click="showPopupFormHandle(data.place_from, data.place_to, data.price)">
                         <div class="item-box">
-                            <img class="thumbnail" :src="require(`@/assets/img/flight-images/destinations/` + data.img)" :alt="$linkHandle(data.place_from + '-' + data.place_to)">
+                            <img class="thumbnail" :src="$getImageLink('flight-images/destinations', data.img)" :alt="$linkHandle(data.place_from + '-' + data.place_to)">
     
                             <div class="service-content">
                                 <div class="title">
@@ -20,7 +20,7 @@
                                         <span>discount {{ data.discount }}%</span>
                                     </div>
                                     <div class="airlines">
-                                        <img v-for="(item, index) in data.airlines.split('/')" :key="index" :src="require(`@/assets/img/flight-images/airlines/` + item + '.png')" :alt="item">
+                                        <img v-for="(item, index) in data.airlines.split('/')" :key="index" :src="$getImageLink('flight-images/airlines', item + '.png')" :alt="item">
                                     </div>
                                 </div>
                             </div>

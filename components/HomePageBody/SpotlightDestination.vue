@@ -13,19 +13,19 @@
 
         <div class="carousel-inner">
           <div class="carousel-item spotlight-item active" data-bs-interval="6000">
-            <img src="@/assets/img/destinations/sa-pa/terrace.jpg" class="d-block w-100 h-100" alt="sa-pa">
+            <img :src="$getImageLink(`destinations/sa-pa`, `terrace.jpg`)" class="d-block w-100 h-100" alt="sa-pa">
             <h2 class="floating-text">Terraced rice fields – Sapa landscapes of marvel, stunning and poetic beauty</h2>
           </div>
           <div class="carousel-item spotlight-item" data-bs-interval="6000">
-            <img src="@/assets/img/destinations/quang-binh/hang-en-pic3.jpeg" class="d-block w-100 h-100" alt="quang-binh">
+            <img :src="$getImageLink(`destinations/quang-binh`, `hang-en-pic3.jpeg`)" class="d-block w-100 h-100" alt="quang-binh">
             <h2 class="floating-text">The majesty of the third biggest cave in the world with separate ecosystem and climate, along with a beautiful river</h2>
           </div>
           <div class="carousel-item spotlight-item" data-bs-interval="6000">
-            <img src="@/assets/img/destinations/hanoi/long-bien-bridge.jpg" class="d-block w-100 h-100" alt="hanoi">
+            <img :src="$getImageLink(`destinations/hanoi`, `long-bien-bridge.jpg`)" class="d-block w-100 h-100" alt="hanoi">
             <h2 class="floating-text">The Capital of a thousand years of civilization, the center of culture and politics</h2>
           </div>
           <div class="carousel-item spotlight-item" data-bs-interval="6000">
-            <img src="@/assets/img/destinations/phu-quoc/phu-quoc-pic3.jpeg" class="d-block w-100 h-100" alt="phu-quoc">
+            <img :src="$getImageLink(`destinations/phu-quoc`, `phu-quoc-pic3.jpeg`)" class="d-block w-100 h-100" alt="phu-quoc">
             <h2 class="floating-text">The wonderful pearl island in Viet Nam – tourist paradise of tropical region</h2>
           </div>
         </div>

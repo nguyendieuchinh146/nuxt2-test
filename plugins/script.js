@@ -7,9 +7,15 @@ const convertedLink = link => {
 //   return a + b 
 // }
 
+const getImageLink = (path = '', src = '') => {
+  return require(`@/assets/img/fansipan-pic7.jpeg`);
+  return require(`@/assets/img/${path}/${src}`);
+}
+
 
 export default ({ app }, inject) => {
     inject('linkHandle', convertedLink);
+    inject('getImageLink', getImageLink);
 
     // inject('sum', sumFn);
 }

@@ -8,7 +8,7 @@
                     <div v-for="data in filteredhotelReservationData" :key="data.id" class="service-item" @click="showPopupFormHandle(data.title, data.price)">
                         <div class="item-box">
                             <div class="thumbnail">
-                                <img :src="require(`@/assets/img/hotel-images/` + data.img)" :alt="data.title.toLowerCase().replace(/\s+/g, '-')">
+                                <img :src="$getImageLink(`hotel-images`, `${data.img}`)" :alt="data.title.toLowerCase().replace(/\s+/g, '-')">
                             </div>
                             <div class="service-content">
                                 <div class="service-title">

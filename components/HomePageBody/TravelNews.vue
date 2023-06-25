@@ -8,7 +8,7 @@
                     <div class="news-item" v-for="data in travelNewsData" :key="data.id">
                         <NuxtLink :to="'travel-news/'+data.link">
                             <div class="thumbnail">
-                                <img :src="require(`@/assets/img/travel-news/` + data.img)" :alt="data.title.toLowerCase().replace(/\s+/g, '-')">
+                                <img :src="$getImageLink('travel-news', data.img)" :alt="data.title.toLowerCase().replace(/\s+/g, '-')">
                             </div>
                             <div class="news-content">
                                 <div class="news-title">

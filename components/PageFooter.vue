@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div id="copyright">
-                    <NuxtLink to="/"><img src="@/assets/img/additional/asia-logo.png" alt="asia-prime-travel-logo"></NuxtLink>
+                    <NuxtLink to="/"><img src="@/assets/img/asia-logo.png" alt="asia-prime-travel-logo"></NuxtLink>
                     <div>
                         <span>Copyright © 2023 Asia Prime Travel. All rights reserved. No.341 Street 72, Duong Noi Ward, Ha Dong District, Hanoi, Vietnam. Phone: <a href="tel:+84 (0) 243 678 77 88">+84 (0) 243 678 77 88</a>. Hotline: <a href="tel:+84 (0) 903 453 499">+84 (0) 903 453 499</a>. Email: <a href="mailto:travel@travelprime.asia">Travel@travelprime.asia</a></span>
                     </div>

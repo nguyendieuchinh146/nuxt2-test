@@ -6,7 +6,7 @@
                 <div v-for="data in destinationsData" :key="data.id" class="destination-item" >
                     <NuxtLink :to="`/${$linkHandle(data.title)}`">
                         <div class="image">
-                            <img :src="require(`@/assets/img/destinations/${$linkHandle(data.title)}/${JSON.parse(data.image_json)[0]}`)" :alt=" $linkHandle(data.title) ">
+                            <img :src="$getImageLink(`destinations/${$linkHandle(data.title)}`, `${JSON.parse(data.image_json)[0]}`)" :alt=" $linkHandle(data.title) ">
                         </div>
                         <div class="content">
                             <h2>{{ data.title + ' - ' + data.description }}</h2>
